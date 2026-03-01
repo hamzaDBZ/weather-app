@@ -34,7 +34,7 @@ header form {
   height: 30px;
 }
 
-header form input[type="text"] {
+header form input#location {
   background-color: var(--main-color);
   color: white;
   border: none;
@@ -44,10 +44,10 @@ header form input[type="text"] {
   height: 100%;
 }
 
-header form input[type="text"]:focus {
+header form input#location:focus {
   outline: 2px solid white;
 }
-header form input[type="text"]::placeholder {
+header form input#location::placeholder {
   color: #ffffff8e;
 }
 
