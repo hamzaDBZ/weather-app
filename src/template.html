@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Report</title>
+  </head>
+  <body>
+    <header>
+      <div class="title">Weather Report</div>
+      <form>
+        <input
+          id="location"
+          name="location"
+          type="text"
+          placeholder="Enter Location"
+          required
+        />
+        <span>
+          <input name="unit" type="radio" id="C" value="C" checked />
+          <label for="C">°C</label>
+        </span>
+        <span>
+          <input name="unit" type="radio" id="F" value="F" />
+          <label for="F">°F</label>
+        </span>
+        <input type="submit" value="Search" />
+      </form>
+    </header>
+    <main>
+      <div class="temp-card">
+        <div class="city"></div>
+        <div class="temp"></div>
+        <div class="weather-info">
+          <div>
+            <div class="conditions"></div>
+            <div class="feels-like">Feels like <span></span></div>
+          </div>
+        </div>
+        <div class="datetime"></div>
+      </div>
+      <div class="humidity">Humidity<span></span></div>
+      <div class="wind-speed">
+        Wind Speed<span><span class="unit"></span></span>
+      </div>
+      <div class="sunrise">Sunrise<span></span></div>
+      <div class="sunset">Sunset<span></span></div>
+    </main>
+  </body>
+</html>
